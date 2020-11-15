@@ -26,7 +26,10 @@ namespace PhotoAlbumFunctions
             {
                 Url = imageUrlOfTheDay,
                 CreatedAt = DateTime.Now,
-                Tags = new List<Tag>()
+                Tags = new List<Tag> 
+                { 
+                    new Tag { Value = "bing" } 
+                }
             };
 
             _context.Photos.Add(photo);
